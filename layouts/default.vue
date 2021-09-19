@@ -1,17 +1,7 @@
 <template>
   <v-app>
-    <nav-bar/>
-    <v-main>
-      <v-container>
-        <Nuxt />
-      </v-container>
-    </v-main>
-    <v-footer
-      :absolute="!fixed"
-      app
-    >
-      <span>&copy; {{ new Date().getFullYear() }}</span>
-    </v-footer>
+    <nav-bar :isDark="false"/>
+    <Nuxt />
   </v-app>
 </template>
 
@@ -44,3 +34,9 @@ export default {
   }
 }
 </script>
+<style>
+  html {
+    overscroll-behavior-y: none;
+    overscroll-behavior-x: none;
+  }
+</style>

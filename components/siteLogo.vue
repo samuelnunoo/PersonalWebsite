@@ -1,13 +1,12 @@
 <template>
-  <button>
+  <button @click="goToHome">
     <div class="logo-container">
       <img :src="siteLogo">
-      <div class="logo-title-container">
+      <div class="logo-title-container" :class="{'dark-font': !isInverted}">
         <h1 id="logo-heading"> Samuel Nunoo</h1>
         <p id="logo-subscript"> Full-Stack Developer</p>
       </div>
     </div>
-
   </button>
 </template>
 
@@ -27,17 +26,20 @@ export default {
         "/siteLogoInverted.png":
         "/siteLogo.png"
     }
+  },
+  methods: {
+    goToHome() {
+      this.$router.push({path:"/"})
+    }
   }
-
 }
 </script>
-
 <style lang="sass" scoped>
   img
     width: auto
     height: 100%
 
-  dark
+  .dark-font
     color: black
 
   .logo-container
@@ -51,7 +53,7 @@ export default {
 
   #logo-heading
     font-size: 1em
-    font-weight: 400
+    font-weight: bolder
     margin-top: 5px
     font-family: "Roboto Condensed"
 
@@ -60,7 +62,4 @@ export default {
     margin-top: -2.5px
     font-weight: 100
     font-family: "Roboto Condensed"
-
-
-
 </style>

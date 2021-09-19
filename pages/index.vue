@@ -1,77 +1,121 @@
 <template>
-  <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
-      <v-card class="logo py-4 d-flex justify-center">
-        <NuxtLogo />
-        <VuetifyLogo />
-      </v-card>
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
-        <v-card-text>
-          <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
-          <p>
-            For more information on Vuetify, check out the <a
-              href="https://vuetifyjs.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              documentation
-            </a>.
-          </p>
-          <p>
-            If you have questions, please join the official <a
-              href="https://chat.vuetifyjs.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="chat"
-            >
-              discord
-            </a>.
-          </p>
-          <p>
-            Find a bug? Report it on the github <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="contribute"
-            >
-              issue board
-            </a>.
-          </p>
-          <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
-          </div>
-          <hr class="my-3">
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt Documentation
-          </a>
-          <br>
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt GitHub
-          </a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn
-            color="primary"
-            nuxt
-            to="/inspire"
-          >
-            Continue
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-col>
-  </v-row>
+  <div class="main-container">
+    <div class="text-container">
+      <div class="text-content">
+        <p class="main-name"> Samuel Nunoo</p>
+        <h1 class="main-title"> Full-Stack</h1>
+        <h1 class="main-title"> Web Developer</h1>
+        <p class="main-subscript"> Passionate about creating apps that makes life a little less troublesome.</p>
+      </div>
+      <div class="link-content">
+          <a>Projects</a>
+          <a>Resume</a>
+          <a>Contact</a>
+      </div>
+    </div>
+    <div class="main-image"/>
+  </div>
 </template>
+
+<script>
+
+</script>
+<style lang="sass" scoped>
+  $grey: #A7A7A7
+
+  a
+    color: black
+    font-weight: bolder
+    text-decoration: underline
+    font-family: "Roboto Condensed"
+    text-decoration-color: black
+
+  .link-content
+    display: flex
+    justify-content: space-around
+    width: 100%
+    padding: 0 80px 0 80px
+    font-size: 1.25em
+    font-family: "Roboto Condensed"
+
+  .main-name
+    font-family: "Roboto Condensed"
+    font-weight: bold
+    margin-bottom: -10px
+    margin-top: auto
+    color: $grey
+
+  .text-content
+    text-align: left
+
+
+  .main-title
+    font-family: "Roboto Condensed"
+    line-height: initial
+    font-size: 4em
+
+  .main-subscript
+    font-family: "Roboto Condensed"
+    font-weight: 100
+    color: $grey
+
+  .main-container
+    height: 100%
+    margin-top: -50px
+    display: flex
+
+  .text-container
+    flex-basis: 50%
+    height: 100vh
+    display: flex
+    align-items: center
+    flex-direction: column
+    justify-content: center
+    text-align: center
+
+  .main-image
+    height: 100vh
+    flex-basis: 60%
+    background-image: url('/portrait.jpg')
+    background-position: 20% 50%
+    background-repeat: no-repeat
+    background-size: cover
+    overflow: hidden
+
+  img
+    width: 100%
+    height: 100%
+
+
+  @media (max-width: 1000px)
+    .main-container
+      flex-direction: column-reverse
+
+    .main-image
+      flex-basis: 40%
+
+    .link-content
+      flex-direction: column
+      flex-basis: 45%
+
+    .text-content
+      text-align: center !important
+      width: 75%
+      margin: 0 auto 0 auto
+
+    .text-container
+      align-items: start
+      flex-basis: 60%
+      width: 100%
+      justify-content: initial
+      padding-top: 20px
+
+    .main-name
+        font-size: 19px
+
+    .main-subscript
+        font-size: 24px
+
+    .main-title
+      font-size: 50px
+</style>
