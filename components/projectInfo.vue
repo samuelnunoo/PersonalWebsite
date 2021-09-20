@@ -46,6 +46,7 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+  @import "assets/colors"
 
   .info-container
     scroll-snap-align: start
@@ -91,5 +92,7 @@ export default {
     display: flex
     justify-content: center
 
-
+  @media (max-width: $mobile-width)
+    .text-container
+      width: 75%
 </style>

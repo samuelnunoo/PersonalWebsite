@@ -43,7 +43,7 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-
+  @import "assets/colors"
   .reverse
     flex-direction: row-reverse
 
@@ -55,7 +55,8 @@ export default {
 
   .text-content
     align-self: center
-    width: 200px
+    width: 75%
+    word-break: break-word
 
   .feature-title
     font-family: "Roboto Condensed"
@@ -68,7 +69,7 @@ export default {
 
   .feature-container
     width: 100vw
-    height: 45vh
+    height: 50vh
     padding: 2.5vh 0 2.5vh 0
     display: flex
     scroll-snap-align: start
@@ -82,4 +83,39 @@ export default {
     flex-basis: 50%
     display: flex
     justify-content: center
+
+
+  @media (max-width: $mobile-width)
+    .feature-container
+      flex-direction: column-reverse
+      height: 90vh
+      padding: 0
+      background: white
+
+    .feature-image
+      padding: 50px 0 10px
+
+    .text-container
+      width: 80%
+
+    .feature-image
+      height: 50vh
+
+    .text-content
+      align-self: start
+      color: white
+
+
+
+
+    img
+      width: auto
+      height: 100%
+
+
+    .feature-text
+      flex-basis: 100%
+      text-align: center
+      background: black
+
 </style>
