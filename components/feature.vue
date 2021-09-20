@@ -88,7 +88,7 @@ export default {
   @media (max-width: $mobile-width)
     .feature-container
       flex-direction: column-reverse
-      height: 90vh
+      height: 100vh
       padding: 0
       background: white
 
@@ -104,9 +104,6 @@ export default {
     .text-content
       align-self: start
       color: white
-
-
-
 
     img
       width: auto
