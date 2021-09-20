@@ -5,20 +5,34 @@
       :description="description"
       date="March 2020 - Present"
     />
+    <Feature
+      image="/bannerlord.png"
+      title="Outliner"
+      description="123213312312313"
+      :isDark="true"
+      :isReverse="true"
+    />
   </div>
 </template>
 
 <script>
 import projectInfo from "../components/projectInfo";
+import Feature from "../components/feature";
 export default {
   name: "typeio.vue",
   components: {
+    Feature,
     projectInfo
   },
   data() {
     return {
       description: `Type.io is a document editor that was developed to maximize productivity by providing numerous features to make
-      data more searchable. This was one of the most challenging projects I've worked on, with over 20,000 lines of code. `
+      data more searchable. This was one of the most challenging projects I've worked on, with over 20,000 lines of code. `,
+      features: [
+        {
+
+        }
+      ]
     }
   }
 }

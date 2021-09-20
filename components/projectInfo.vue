@@ -1,6 +1,9 @@
 <template>
-  <div>
+  <div class="info-container">
     <div class="github-container">
+      <button @click="goT" v-if="github != ''">
+        <img class='github' src="/github.png" />
+       </button>
       <h1 class="project-title"> {{ title }}</h1>
       <h4 class="project-date"> {{ date }} </h4>
     </div>
@@ -28,16 +31,32 @@ export default {
     date: {
       type: String,
       required:true
+    },
+    github: {
+      type: String,
+      default:''
+    }
+  },
+  methods: {
+    openUrl() {
+
     }
   }
 }
 </script>
 
 <style lang="sass" scoped>
+
+  .info-container
+    scroll-snap-align: start
+
   .project-title
     color: white
     text-align: center
     font-size: 4em
+
+  .github
+    width: 100px
 
   .project-date
     color: grey
