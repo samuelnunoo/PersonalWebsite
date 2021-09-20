@@ -1,27 +1,70 @@
 <template>
-  <div class="main-container">
-    <div class="text-container">
-      <div class="text-content">
-        <p class="main-name"> Samuel Nunoo</p>
-        <h1 class="main-title"> Full-Stack</h1>
-        <h1 class="main-title"> Web Developer</h1>
-        <p class="main-subscript"> Passionate about creating apps that makes life a little less troublesome.</p>
-      </div>
-      <div class="link-content">
+  <div>
+    <div class="main-container">
+      <div class="text-container">
+        <div class="text-content">
+          <p class="main-name"> Samuel N</p>
+          <h1 class="main-title"> Full-Stack</h1>
+          <h1 class="main-title"> Web Developer</h1>
+          <p class="main-subscript"> Passionate about creating apps that makes life a little less troublesome.</p>
+        </div>
+        <div class="link-content">
           <a>Projects</a>
           <a>Resume</a>
           <a>Contact</a>
+        </div>
       </div>
+      <div class="main-image"/>
     </div>
-    <div class="main-image"/>
+    <Project
+        v-for="(project,index) in projects"
+        :date="project.date"
+        :title="project.title"
+        :image="project.image"
+        :reverse="index % 2 == 0 ? false: true"
+    />
   </div>
+
 </template>
 
 <script>
+import Project from "../components/Project";
+export default {
+  components: {Project},
+  data() {
+    return {
+      components: {Project},
+      projects:[
+        {
+          date:"March 2020 - Present",
+          title:"Type.io",
+          image:"/type.io.png"
+        },
+        {
+          date:"April 2020 - November 2020",
+          title:"Bannerlord Modding Project",
+          image:"/untitled.gif",
+
+        },
+        { date:"September 2019 - March 2020",
+          title:"CJMSJ",
+          image:"/cjmsj.png"
+        },
+
+      ]
+    }
+  }
+}
 
 </script>
-<style lang="sass" scoped>
-  $grey: #A7A7A7
+<style lang="sass">
+  @import "assets/colors"
+
+  html
+    scroll-snap-type: y mandatory
+
+  .page-container
+    width: 100vw
 
   a
     color: black
@@ -60,13 +103,14 @@
     color: $grey
 
   .main-container
-    height: 100%
+    height: 100vh
     margin-top: -50px
     display: flex
+    scroll-snap-align: start
 
   .text-container
     flex-basis: 50%
-    height: 100vh
+    height: 100%
     display: flex
     align-items: center
     flex-direction: column
@@ -74,7 +118,7 @@
     text-align: center
 
   .main-image
-    height: 100vh
+    height: 100%
     flex-basis: 60%
     background-image: url('/portrait.jpg')
     background-position: 20% 50%
@@ -87,9 +131,11 @@
     height: 100%
 
 
-  @media (max-width: 1000px)
+  @media (max-width: $mobile-width)
     .main-container
       flex-direction: column-reverse
+
+
 
     .main-image
       flex-basis: 40%

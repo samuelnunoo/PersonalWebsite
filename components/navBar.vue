@@ -20,9 +20,11 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+@import 'assets/colors'
+
 #navbar
   width: 100%
-  height: 50px
+  height: $navbar-height
   display: flex
   justify-content: space-between
   top: 0

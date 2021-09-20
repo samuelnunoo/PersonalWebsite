@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <nav-bar :isDark="false"/>
-    <Nuxt />
+    <Nuxt/>
   </v-app>
 </template>
 
