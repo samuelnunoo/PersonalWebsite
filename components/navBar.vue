@@ -13,7 +13,7 @@ export default {
   data() {
     return {
       isDark:false,
-      darkMenu:true
+      darkMenu:false
     }
   },
   methods: {
@@ -48,13 +48,8 @@ export default {
       const isMenuButton = element.classList.contains("v-btn")
       const colorValue = color == "white"
 
-      if (isMenuButton) {
-        console.log(colorValue)
-        this.darkMenu = colorValue
-      }
-
+      if (isMenuButton) this.darkMenu = colorValue
       else this.isDark = colorValue
-
     }
   },
   mounted() {
@@ -62,16 +57,17 @@ export default {
     const {left,top} = logoTitle.getBoundingClientRect()
     const vApp = document.querySelector(".v-application--wrap")
     const navBar = document.querySelector("#navbar")
-
     const menuButton = document.querySelector("#navbar .v-btn")
-    const {width} = navBar.getBoundingClientRect()
     const handleColor = this.handleColor(vApp,navBar)
-    handleColor(logoTitle,left,top)
-    handleColor(menuButton,width - 100,0)
 
+    const handleColorMethods = () => {
+      const {width} = navBar.getBoundingClientRect()
+      const buttonPos = width * .95
+      handleColor(logoTitle,left,top)
+      handleColor(menuButton,buttonPos,0)
+    }
     document.addEventListener('scroll',function(event) {
-       handleColor(logoTitle,left,top)
-       handleColor(menuButton,width - 100,0)
+      handleColorMethods()
     }.bind(this))
   }
 }

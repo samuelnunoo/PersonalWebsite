@@ -2,6 +2,7 @@
   <v-app>
     <nav-bar :isDark="false"/>
     <Nuxt/>
+    <scroll-to-top/>
   </v-app>
 </template>
 
