@@ -2,7 +2,7 @@
   <button @click="goToHome">
     <div class="logo-container">
       <img :src="siteLogo">
-      <div class="logo-title-container" :class="{'dark-font': !isInverted}">
+      <div class="logo-title-container" :class="{'dark-font': isInverted}">
         <h1 id="logo-heading"> Samuel Nunoo</h1>
         <p id="logo-subscript"> Full-Stack Developer</p>
       </div>
@@ -40,7 +40,7 @@ export default {
     height: 100%
 
   .dark-font
-    color: black
+    color: white
 
   .logo-container
     width: auto

@@ -1,5 +1,5 @@
 <template>
-  <div class="project-container" :class="{'reverse': reverse }">
+  <div class="project-container" :class="{'reverse': reverse }" >
     <img class='display' :src="image" />
     <div class="description">
       <div class="text-content">
@@ -40,6 +40,7 @@ export default {
   width: 100vw
   height: 100vh
   scroll-snap-align: start
+
 
 .reverse
   flex-direction: row-reverse

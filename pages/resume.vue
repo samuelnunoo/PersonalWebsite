@@ -2,10 +2,8 @@
   <div class="main-container" id="resume">
     <div class="resume-container">
       <div class="resume-data">
-        <div class="portrait" src="/piano.jpg"/>
-        <h1 class="college-text" > Pomona College</h1>
-        <h2 class="degree-text"> B.A Computer Science '22</h2>
-        <button class="resume-button"> Download Resume </button>
+        <h1 class="resume-heading"> Resume </h1>
+        <button class="resume-button"> View Resume </button>
       </div>
 
     </div>
@@ -24,6 +22,10 @@ export default {
 
 <style lang="sass" scoped>
 @import 'assets/colors'
+
+.resume-heading
+  font-family: "Roboto Condensed"
+
 .resume-data
   display: flex
   flex-direction: column
@@ -36,6 +38,7 @@ export default {
     width: 200px
     height: 200px
     background-image: url('/portrait.jpg')
+    background: black
     background-size: cover
     background-position: 0px
 
@@ -48,6 +51,7 @@ export default {
   width: 50vw
   height: 100vh
   background-image: url('/ocean.jpg')
+  background: black
   background-size: cover
 
 .resume-button
@@ -56,7 +60,7 @@ export default {
   border-radius: 10px
   font-family: "Roboto Condensed"
   color: white
-  padding: 10px
+  padding: 15px
   margin-top: 10px
 
 .college-text
@@ -66,7 +70,7 @@ export default {
 
 .degree-text
   font-family: "Roboto Condensed"
-  font-weight: 100
+  color: $grey
 
 
 
@@ -101,7 +105,7 @@ export default {
 
   .resume-container
     width: 100%
-    background: white
+
 
   .resume-data
     color: black

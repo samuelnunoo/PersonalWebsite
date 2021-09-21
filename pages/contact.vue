@@ -33,8 +33,8 @@ export default {
 
 @media (max-width: $mobile-width)
   .contact-container
-    justify-content: start
-    padding-top: 20%
+    justify-content: center
+    padding-bottom: 20%
 
   .contact
     padding-top: 5vh

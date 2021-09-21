@@ -10,6 +10,7 @@
     <v-snackbar
       v-model="copyAlert"
       top
+      color="black"
       app
       timeout="3000"
       elevation="20"

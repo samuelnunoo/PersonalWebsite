@@ -13,7 +13,7 @@
 
 <script>
 import Project from "../components/Project";
-
+import VanillaTilt from "vanilla-tilt"
 export default {
   name: "projects",
   components: {Project},
@@ -39,6 +39,10 @@ export default {
 
       ]
     }
+  },
+  mounted() {
+
+
   }
 
 

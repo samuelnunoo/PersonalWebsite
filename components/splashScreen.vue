@@ -1,10 +1,9 @@
 <template>
-  <div class="main-container">
+  <div class="main-container" id="home">
     <div class="text-container">
       <div class="text-content">
         <p class="main-name"> Samuel Nunoo</p>
-        <h1 class="main-title"> Full-Stack</h1>
-        <h1 class="main-title"> Web Developer</h1>
+        <h1 class="main-title"> Full-Stack <br/> Web Developer </h1>
         <p class="main-subscript"> Passionate about creating apps that makes life a little less troublesome.</p>
       </div>
       <div class="link-content">
@@ -58,7 +57,7 @@ export default {
 .main-title
   font-family: "Roboto Condensed"
   line-height: initial
-  font-size: 4em
+  font-size: 3em
 
 .main-subscript
   font-family: "Roboto Condensed"
@@ -97,11 +96,7 @@ img
 @media (max-width: $mobile-width)
   .main-container
     flex-direction: column-reverse
-
-
-
-  .main-image
-    flex-basis: 40%
+    height: 90vh
 
   .link-content
     flex-direction: column
@@ -126,5 +121,5 @@ img
     font-size: 1.2em
 
   .main-title
-    font-size: 50px
+    font-size: 2em
 </style>
