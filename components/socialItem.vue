@@ -8,6 +8,7 @@
       <v-list-item-title class="link-title" :class="{'dark-mode': isDark}"> {{title}} </v-list-item-title>
     </v-list-item>
     <v-snackbar
+      id="snackbar"
       v-model="copyAlert"
       top
       color="black"
@@ -87,6 +88,10 @@ img
   img
     width: 3em
     height: 3em
+
+  .v-snack__content
+    width: 90vw
+
 
 
 

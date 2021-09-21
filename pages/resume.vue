@@ -3,7 +3,7 @@
     <div class="resume-container">
       <div class="resume-data">
         <h1 class="resume-heading"> Resume </h1>
-        <button class="resume-button"> View Resume </button>
+        <button @click="viewResume" class="resume-button"> View Resume </button>
       </div>
 
     </div>
@@ -12,11 +12,17 @@
 </template>
 
 <script>
+const PDF_URL = "/resume2021.pdf"
 import Job from "../components/job.vue"
 import social from "../components/social";
 export default {
   name: "resume",
-  components: {Job,social}
+  components: {Job,social},
+  methods: {
+    viewResume() {
+      window.open(PDF_URL)
+    }
+  }
 }
 </script>
 
