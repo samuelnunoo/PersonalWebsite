@@ -64,7 +64,9 @@ export default {
 
 .description
   flex-basis: 50%
-  align-self: center
+  display: flex
+  align-items: center
+  justify-content: center
 
 
 @media (max-width: $mobile-width)

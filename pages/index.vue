@@ -3,15 +3,15 @@
     <div class="main-container">
       <div class="text-container">
         <div class="text-content">
-          <p class="main-name"> Samuel N</p>
+          <p class="main-name"> Samuel Nunoo</p>
           <h1 class="main-title"> Full-Stack</h1>
           <h1 class="main-title"> Web Developer</h1>
           <p class="main-subscript"> Passionate about creating apps that makes life a little less troublesome.</p>
         </div>
         <div class="link-content">
-          <a>Projects</a>
-          <a>Resume</a>
-          <a>Contact</a>
+          <a href="#Type.io">Projects</a>
+          <a href="/resume">Resume</a>
+          <a href="/contact">Contact</a>
         </div>
       </div>
       <div class="main-image"/>
@@ -20,6 +20,7 @@
         v-for="(project,index) in projects"
         :date="project.date"
         :title="project.title"
+        :id="project.title"
         :image="project.image"
         :reverse="index % 2 == 0 ? false: true"
     />
@@ -60,13 +61,10 @@ export default {
 <style lang="sass">
   @import "assets/colors"
 
-  html
-    scroll-snap-type: y mandatory
-
   .page-container
     width: 100vw
 
-  a
+  .link-content > a
     color: black
     font-weight: bolder
     text-decoration: underline
@@ -160,7 +158,7 @@ export default {
         font-size: 19px
 
     .main-subscript
-        font-size: 24px
+        font-size: 1.2em
 
     .main-title
       font-size: 50px
