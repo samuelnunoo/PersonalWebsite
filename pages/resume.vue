@@ -1,17 +1,15 @@
 <template>
-  <div class="main-container">
+  <div class="main-container" id="resume">
     <div class="resume-container">
       <div class="resume-data">
-        <div class="portrait" src="/portrait.jpg"/>
+        <div class="portrait" src="/piano.jpg"/>
         <h1 class="college-text" > Pomona College</h1>
         <h2 class="degree-text"> B.A Computer Science '22</h2>
         <button class="resume-button"> Download Resume </button>
       </div>
-    </div>
-    <div class="social-container">
 
-      <social/>
     </div>
+    <div class="cover" />
   </div>
 </template>
 
@@ -27,7 +25,6 @@ export default {
 <style lang="sass" scoped>
 @import 'assets/colors'
 .resume-data
-  color: white
   display: flex
   flex-direction: column
   align-items: center
@@ -47,12 +44,18 @@ export default {
   font-weight: bolder
   font-size: 2.5em
 
+.cover
+  width: 50vw
+  height: 100vh
+  background-image: url('/ocean.jpg')
+  background-size: cover
 
 .resume-button
-  background: white
+  background: black
   font-weight: bold
+  border-radius: 10px
   font-family: "Roboto Condensed"
-  color: black
+  color: white
   padding: 10px
   margin-top: 10px
 
@@ -70,7 +73,6 @@ export default {
 .resume-container
   width: 50vw
   height: 100vh
-  background: black
   display: flex
   justify-content: center
 
@@ -86,7 +88,7 @@ export default {
   width: 100vw
   height: 100vh
   display: flex
-  margin-top: -50px
+  scroll-snap-align: start
 
 
 
@@ -109,6 +111,9 @@ export default {
     color: white
     border-radius: 10px
     padding: 15px
+
+  .cover
+    display: none
 
 
   .social-container

@@ -8446,6 +8446,11 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
+rot13-cipher@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/rot13-cipher/-/rot13-cipher-1.0.0.tgz#959d5d6425446a5e292703ca895b935d69bf0363"
+  integrity sha512-KXW+GRWwqT1xSBl4K7WzlXX8ba+h2CjguOhPaBsZ3nBPDzaTQncL3uEAauLXS4tAqerfAoc1iIYZbo8gPhmAfA==
+
 run-async@^2.4.0:
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/run-async/-/run-async-2.4.1.tgz#8440eccf99ea3e70bd409d49aab88e10c189a455"
