@@ -1,18 +1,18 @@
 <template>
 <v-list class="list">
   <socialItem
-    image="/email.png"
+    image="/social/email.png"
     title="Email"
   />
   <socialItem
     link='https://www.github.com/samuelnunoo'
-    image="/github.png"
+    image="/social/github.png"
     title="Github"
     :isDark="true"
   />
   <socialItem
     link="https://www.linkedin.com/in/samuelnunoo/"
-    image="/linkedin.png"
+    image="/social/linkedin.png"
     title="Linkedin"
   />
 

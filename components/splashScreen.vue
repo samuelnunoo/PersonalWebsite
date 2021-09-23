@@ -82,7 +82,7 @@ export default {
 .main-image
   height: 100%
   flex-basis: 60%
-  background-image: url('/portrait.jpg')
+  background-image: url('/main/portrait.jpg')
   background-position: 20% 50%
   background-repeat: no-repeat
   background-size: cover

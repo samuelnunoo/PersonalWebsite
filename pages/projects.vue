@@ -5,6 +5,7 @@
     :date="project.date"
     :title="project.title"
     :id="project.title"
+    :gif="project.gif"
     :image="project.image"
     :reverse="index % 2 == 0 ? false: true"
   />
@@ -24,17 +25,18 @@ export default {
         {
           date:"March 2020 - Present",
           title:"Type.io",
-          image:"/type.io.png"
+          gif:"/typeio/type_creator.mp4",
+          image:"/typeio/type_creator.png"
         },
         {
           date:"April 2020 - November 2020",
           title:"Bannerlord Modding Project",
-          image:"/untitled.gif",
+          link:"/bannerlord/bannerlord.mp4",
 
         },
         { date:"September 2019 - March 2020",
           title:"CJMSJ",
-          image:"/cjmsj.png"
+          link:"/cjmsj/cjmsj.mp4"
         },
 
       ]

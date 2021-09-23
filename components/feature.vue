@@ -1,7 +1,8 @@
 <template>
-<div class="feature-container" :class="{'darkMode': isDark,
-'reverse': isReverse
-}">
+<div
+  class="feature-container"
+  :class="{'darkMode': isDark,'reverse': isReverse}"
+>
   <div class="feature-text">
     <div class="text-content">
       <h1 class="feature-title"> {{title}}</h1>
@@ -9,14 +10,16 @@
     </div>
   </div>
   <div class="feature-image">
-    <img :src="image"/>
+    <gif class='gif' :gif="gif" :image="image"/>
   </div>
 </div>
 </template>
 
 <script>
+import Gif from "./gif";
 export default {
   name: "feature",
+  components: {"gif":Gif},
   props: {
     title: {
       type:String,
@@ -28,6 +31,10 @@ export default {
     },
     image: {
       type:String,
+      required:true
+    },
+    gif: {
+      type: String,
       required:true
     },
     isDark: {
@@ -50,12 +57,14 @@ export default {
   .darkMode
     color: white
     background: black
-  img
+
+  .gif
     border-radius: 10px
+    height: 60%
 
   .text-content
     align-self: center
-    width: 75%
+    width: 50%
     word-break: break-word
 
   .feature-title
@@ -75,25 +84,28 @@ export default {
     scroll-snap-align: start
 
   .feature-text
-    flex-basis: 50%
+    flex-basis: 50vw
     display: flex
     justify-content: center
 
   .feature-image
-    flex-basis: 50%
+    flex-basis: 50vw
     display: flex
     justify-content: center
+    align-items: center
+
 
 
   @media (max-width: $mobile-width)
     .feature-container
       flex-direction: column-reverse
       height: 100vh
-      padding: 0
+      width: 100vw
       background: white
+      padding: 0
 
     .feature-image
-      padding: 50px 0 10px
+      padding: 0
 
     .text-container
       width: 80%
@@ -102,17 +114,51 @@ export default {
       height: 50vh
 
     .text-content
-      align-self: start
       color: white
 
-    img
-      width: auto
+    .gif
+      width: 100%
       height: 100%
+      object-fit: contain
+      border-radius: 0
 
 
     .feature-text
-      flex-basis: 100%
+      flex-basis: 50%
       text-align: center
       background: black
+
+    .darkMode
+      background: white
+
+
+
+  @media (max-width: $mobile-medium)
+    .feature-text
+      flex-basis: 50%
+
+    .feature-container
+      background: white
+
+    .darkMode
+      background: white
+
+
+  @media (max-width: $mobile-small)
+    .gif
+      width: 100%
+      height: 100%
+
+    .feature-text
+      flex-basis: 50%
+      background: white
+
+    .text-content
+      align-self: start
+      color: black
+      max-width: 90%
+
+    .feature-container
+      background: white
 
 </style>

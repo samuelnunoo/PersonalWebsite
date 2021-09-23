@@ -1,6 +1,6 @@
 <template>
   <div class="project-container" :class="{'reverse': reverse }" >
-    <img class='display' :src="image" />
+    <gif  class='display' :gif="gif" :image="image"/>
     <div class="description">
       <div class="text-content">
         <h1 class="project-title"> {{ title }} </h1>
@@ -16,6 +16,10 @@ export default {
     reverse:{
       default:false,
       type:Boolean
+    },
+    gif: {
+      type:String,
+      required:true
     },
     image: {
       type:String,
@@ -46,6 +50,7 @@ export default {
   flex-direction: row-reverse
 
 .display
+  width: 50vw
   flex-basis: 50%
   align-content: center
   object-fit: cover
@@ -88,6 +93,7 @@ export default {
 
   .display
     max-width: 100% !important
+    width: 100vw
     height: 50%
 
 
