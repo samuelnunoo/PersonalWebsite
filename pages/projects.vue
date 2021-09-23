@@ -31,12 +31,13 @@ export default {
         {
           date:"April 2020 - November 2020",
           title:"Bannerlord Modding Project",
-          link:"/bannerlord/bannerlord.mp4",
+          gif:"/bannerlord/bannerlord.mp4",
 
         },
         { date:"September 2019 - March 2020",
           title:"CJMSJ",
-          link:"/cjmsj/cjmsj.mp4"
+          image:"/cjmsj/submission.png",
+          gif:"/cjmsj/submission.mp4"
         },
 
       ]
