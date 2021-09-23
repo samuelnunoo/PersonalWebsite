@@ -1,6 +1,6 @@
 <template>
-  <div class="project-container" :class="{'reverse': reverse }" >
-    <gif  class='display' :gif="gif" :image="image"/>
+  <div  @click='openUrl' class="project-container" :class="{'reverse': reverse }" >
+    <gif  class='display'  :class='{"cover": cover}' :gif="gif" :image="image"/>
     <div class="description">
       <div class="text-content">
         <h1 class="project-title"> {{ title }} </h1>
@@ -17,6 +17,14 @@ export default {
       default:false,
       type:Boolean
     },
+    cover: {
+      default:false,
+      type:Boolean
+    },
+    link: {
+      type:String,
+      required:true
+    },
     gif: {
       type:String,
       required:true
@@ -32,6 +40,11 @@ export default {
     date:{
       type:String,
       required:true
+    }
+  },
+  methods: {
+    openUrl(){
+      window.open(this.link,"_self")
     }
   }
 }
@@ -53,8 +66,11 @@ export default {
   width: 50vw
   flex-basis: 50%
   align-content: center
-  object-fit: cover
   max-width: 60%
+
+
+.cover
+  object-fit: cover
 
 .text-content
   text-align: center
@@ -78,8 +94,6 @@ export default {
 @media (max-width: $mobile-width)
   .project-container
     flex-direction: column-reverse
-
-
 
   .description
     width: 100%

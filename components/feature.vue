@@ -9,8 +9,8 @@
       <p class="feature-description"> {{description}}</p>
     </div>
   </div>
-  <div class="feature-image">
-    <gif class='gif' :gif="gif" :image="image"/>
+  <div class="feature-image" >
+    <gif class='gif' :class='{"cover": cover}' :gif="gif" :image="image"/>
   </div>
 </div>
 </template>
@@ -32,6 +32,10 @@ export default {
     image: {
       type:String,
       required:true
+    },
+    cover: {
+      type:Boolean,
+      default:false
     },
     gif: {
       type: String,
@@ -60,7 +64,7 @@ export default {
 
   .gif
     border-radius: 10px
-    height: 60%
+    height: 100%
 
   .text-content
     align-self: center
@@ -74,6 +78,8 @@ export default {
   .feature-description
     font-family: "Roboto Condensed"
     font-weight: 100
+
+
 
 
   .feature-container
@@ -122,6 +128,11 @@ export default {
       object-fit: contain
       border-radius: 0
 
+    .cover
+      width: 100vw
+      height: 50vh
+      object-fit: cover
+
 
     .feature-text
       flex-basis: 50%
@@ -143,11 +154,22 @@ export default {
     .darkMode
       background: white
 
+    .cover
+      width: 100vw
+      height: 50vh
+      object-fit: cover
+
+
 
   @media (max-width: $mobile-small)
     .gif
       width: 100%
       height: 100%
+
+    .cover
+      width: 100vw
+      height: 50vh
+      object-fit: cover
 
     .feature-text
       flex-basis: 50%

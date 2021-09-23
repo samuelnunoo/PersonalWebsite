@@ -1,8 +1,8 @@
 <template>
   <div class="info-container">
     <div class="github-container">
-      <button @click="goT" v-if="github != ''">
-        <img class='github' src="/github.png" />
+      <button @click="openUrl" v-if="github != ''">
+        <img class='github' src="/social/github.png" />
        </button>
       <h1 class="project-title"> {{ title }}</h1>
       <h4 class="project-date"> {{ date }} </h4>
@@ -39,7 +39,7 @@ export default {
   },
   methods: {
     openUrl() {
-
+      window.open(this.github)
     }
   }
 }

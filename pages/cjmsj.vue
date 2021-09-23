@@ -3,6 +3,7 @@
     <projectInfo
       title="Claremont Journal of Medicine and Social Justice"
       :description="description"
+      github="https://github.com/samuelnunoo/CJMSJ-Website"
       date="September 2019 - March 2020"
     />
     <Feature
