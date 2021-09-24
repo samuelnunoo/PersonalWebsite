@@ -12,7 +12,8 @@
 </template>
 
 <script>
-const PDF_URL = "/resume2021.pdf"
+const PDF_URL = "https://github.com/samuelnunoo/Resume/raw/main/resume.pdf"
+
 import Job from "../components/job.vue"
 import social from "../components/social";
 export default {
