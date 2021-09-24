@@ -23,8 +23,8 @@ export default {
   computed: {
     siteLogo () {
       return this.isInverted ?
-        "/siteLogoInverted.png":
-        "/siteLogo.png"
+        "/logo/siteLogoInverted.png":
+        "/logo/siteLogo.png"
     }
   },
   methods: {
