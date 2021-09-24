@@ -1,5 +1,5 @@
 <template>
-<div class="contact-container" id="contact">
+<div class="contact-container scroll" id="contact">
   <h1 class="contact"> Contact and Social </h1>
   <social/>
 </div>
@@ -28,7 +28,6 @@ export default {
   justify-content: center
   align-items: center
   flex-direction: column
-  scroll-snap-align: start
 
 
 @media (max-width: $mobile-width)

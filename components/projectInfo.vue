@@ -1,5 +1,5 @@
 <template>
-  <div class="info-container">
+  <div class="scroll">
     <div class="github-container">
       <button @click="openUrl" v-if="github != ''">
         <img class='github' src="/social/github.png" />
@@ -47,9 +47,6 @@ export default {
 
 <style lang="sass" scoped>
   @import "assets/colors"
-
-  .info-container
-    scroll-snap-align: start
 
   .project-title
     color: white

@@ -1,5 +1,5 @@
 <template>
-  <div class="main-container" id="home">
+  <div class="main-container scroll" id="home">
     <div class="text-container">
       <div class="text-content">
         <p class="main-name"> Samuel Nunoo</p>
@@ -68,7 +68,7 @@ export default {
   height: 100vh
   margin-top: -50px
   display: flex
-  scroll-snap-align: start
+
 
 .text-container
   flex-basis: 50%

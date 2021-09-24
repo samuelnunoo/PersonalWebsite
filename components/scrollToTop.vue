@@ -19,7 +19,6 @@ export default {
     }
   },
   mounted() {
-    console.log('biff')
     document.addEventListener('scroll',function(event) {
       const buffer = 20
       const hasScrolledPassBuffer = document.scrollingElement.scrollTop > buffer

@@ -1,5 +1,5 @@
 <template>
-  <div  @click='openUrl' class="project-container" :class="{'reverse': reverse }" >
+  <div  @click='openUrl' class="project-container scroll" :class="{'reverse': reverse }" >
     <gif  class='display'  :class='{"cover": cover}' :gif="gif" :image="image"/>
     <div class="description">
       <div class="text-content">
@@ -56,8 +56,6 @@ export default {
   display: flex
   width: 100vw
   height: 100vh
-  scroll-snap-align: start
-
 
 .reverse
   flex-direction: row-reverse

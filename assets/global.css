@@ -1,4 +1,12 @@
 html {
-  scroll-snap-type: y mandatory;
+
+  scroll-snap-type: y;
+  overscroll-behavior-y: none;
+  overscroll-behavior-x: none;
   scroll-behavior: smooth;
 }
+
+.scroll {
+  scroll-snap-align: start;
+}
+
