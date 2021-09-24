@@ -1,6 +1,6 @@
 <template>
 <div
-  class="feature-container"
+  class="feature-container scroll"
   :class="{'darkMode': isDark,'reverse': isReverse}"
 >
   <div class="feature-text">
@@ -87,7 +87,6 @@ export default {
     height: 50vh
     padding: 2.5vh 0 2.5vh 0
     display: flex
-    scroll-snap-align: start
 
   .feature-text
     flex-basis: 50vw

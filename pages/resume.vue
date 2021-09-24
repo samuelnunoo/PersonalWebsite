@@ -1,5 +1,5 @@
 <template>
-  <div class="main-container" id="resume">
+  <div class="main-container scroll" id="resume">
     <div class="resume-container">
       <div class="resume-data">
         <h1 class="resume-heading"> Resume </h1>
@@ -12,7 +12,7 @@
 </template>
 
 <script>
-const PDF_URL = "https://github.com/samuelnunoo/Resume/raw/main/resume.pdf"
+const PDF_URL = "https://samuelnunoo.github.io/Resume/resume.pdf"
 
 import Job from "../components/job.vue"
 import social from "../components/social";
@@ -99,7 +99,7 @@ export default {
   width: 100vw
   height: 100vh
   display: flex
-  scroll-snap-align: start
+
 
 
 
