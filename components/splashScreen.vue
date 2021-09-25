@@ -66,6 +66,7 @@ export default {
 
 .main-container
   height: 100vh
+  height: calc(var(--vh,1vh) * 100)
   margin-top: -50px
   display: flex
 
