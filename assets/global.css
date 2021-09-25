@@ -4,6 +4,13 @@ html{
   overscroll-behavior-y: none;
   overscroll-behavior-x: none;
   scroll-behavior: smooth;
+  height: 100%;
+  height: -webkit-fill-available;
+}
+
+body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
 }
 
 .content-container {
