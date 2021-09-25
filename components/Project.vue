@@ -61,8 +61,9 @@ export default {
 .reverse
   flex-direction: row-reverse
 
-.display
-  width: 50%
+
+display
+  width: 50vw
   flex-basis: 50%
   align-content: center
   max-width: 60%

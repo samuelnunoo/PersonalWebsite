@@ -40,7 +40,11 @@ export default {
     }
   },
   mounted() {
+    let vh = window.innerHeight * 0.01
+    document.documentElement.style.setProperty('--vh',`${vh}px`)
+    window.scrollTo(0,1);
     window.addEventListener("resize",() => {
+      console.log("Changing")
       let vh = window.innerHeight * 0.01
       document.documentElement.style.setProperty('--vh',`${vh}px`)
     })
