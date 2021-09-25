@@ -1,5 +1,5 @@
 <template>
-  <div class="main-container" id="home">
+  <div class="main-container scroll" id="home">
     <div class="text-container">
       <div class="text-content">
         <p class="main-name"> Samuel Nunoo</p>
@@ -26,7 +26,7 @@ export default {
 @import "assets/colors"
 
 .page-container
-  width: 100vw
+  width: 100%
 
 .link-content > a
   color: black
@@ -69,7 +69,7 @@ export default {
   height: calc(var(--vh,1vh) * 100)
   margin-top: -50px
   display: flex
-  scroll-snap-align: start
+
 
 .text-container
   flex-basis: 50%
@@ -97,7 +97,7 @@ img
 @media (max-width: $mobile-width)
   .main-container
     flex-direction: column-reverse
-    height: 90vh
+    height: 100vh
 
   .link-content
     flex-direction: column

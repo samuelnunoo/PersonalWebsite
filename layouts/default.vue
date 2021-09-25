@@ -8,6 +8,7 @@
 
 <script>
 import navBar from "../components/navBar";
+import _ from "lodash"
 export default {
   data () {
     return {
@@ -47,8 +48,5 @@ export default {
 }
 </script>
 <style>
-  html {
-    overscroll-behavior-y: none;
-    overscroll-behavior-x: none;
-  }
+
 </style>

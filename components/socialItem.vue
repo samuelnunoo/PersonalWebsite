@@ -90,7 +90,7 @@ img
     height: 3em
 
   .v-snack__content
-    width: 90vw
+    width: 90%
 
 
 
