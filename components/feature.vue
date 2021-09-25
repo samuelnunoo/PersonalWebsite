@@ -1,6 +1,6 @@
 <template>
 <div
-  class="feature-container"
+  class="feature-container scroll"
   :class="{'darkMode': isDark,'reverse': isReverse}"
 >
   <div class="feature-text">
@@ -83,12 +83,11 @@ export default {
 
 
   .feature-container
-    width: 100vw
+    width: 100%
     height: 50vh
     height: calc(var(--vh,1vh) * 50)
     padding: 2.5vh 0 2.5vh 0
     display: flex
-    scroll-snap-align: start
 
   .feature-text
     flex-basis: 50vw
@@ -108,7 +107,7 @@ export default {
       flex-direction: column-reverse
       height: 100vh
       height: calc(var(--vh,1vh) * 100)
-      width: 100vw
+      width: 100%
       background: white
       padding: 0
 
@@ -132,7 +131,7 @@ export default {
       border-radius: 0
 
     .cover
-      width: 100vw
+      width: 100%
       height: 50vh
       height: calc(var(--vh,1vh) * 50)
       object-fit: cover
@@ -159,7 +158,7 @@ export default {
       background: white
 
     .cover
-      width: 100vw
+      width: 100%
       height: 50vh
       height: calc(var(--vh,1vh) * 50)
       object-fit: cover
@@ -172,7 +171,7 @@ export default {
       height: 100%
 
     .cover
-      width: 100vw
+      width: 100%
       height: 50vh
       height: calc(var(--vh,1vh) * 50)
       object-fit: cover

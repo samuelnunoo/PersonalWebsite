@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="content-container">
     <projectInfo
       title="Bannerlord"
       github="https://github.com/samuelnunoo/Scene-Editor"

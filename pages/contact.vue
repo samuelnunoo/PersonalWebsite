@@ -1,5 +1,5 @@
 <template>
-<div class="contact-container" id="contact">
+<div class="contact-container scroll" id="contact">
   <h1 class="contact"> Contact and Social </h1>
   <social/>
 </div>
@@ -22,14 +22,13 @@ export default {
   font-weight: bolder
 
 .contact-container
-  width: 100vw
+  width: 100%
   height: 100vh
   height: calc(var(--vh,1vh) * 100)
   display: flex
   justify-content: center
   align-items: center
   flex-direction: column
-  scroll-snap-align: start
 
 
 @media (max-width: $mobile-width)
