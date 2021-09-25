@@ -26,8 +26,7 @@ export default {
     isWhite(element){
       const style = getComputedStyle(element)
       const background = style.getPropertyValue("background-color")
-      const isWhite =  background == "rgba(0, 0, 0, 0)" || background.toLowerCase() == '' || background == "rgb(255,255,255)"
-      console.log("Background:",background)
+      const isWhite =  background == "rgba(0, 0, 0, 0)" || background.toLowerCase() == '' || background == "rgb(255, 255, 255)"
       return isWhite
     },
     handleColor(vApp,navBar) {
