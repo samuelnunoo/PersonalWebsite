@@ -29,6 +29,7 @@ export default {
       const background = style.getPropertyValue("background-color")
       const isWhite =  background == "rgba(0, 0, 0, 0)" || background.toLowerCase() == ''
       const hasImage =  style.backgroundImage != 'none'
+      console.log("hasImage:",hasImage)
       return isWhite
     },
     handleColor(vApp,navBar) {

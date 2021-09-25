@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="content-container">
     <projectInfo
       title="Claremont Journal of Medicine and Social Justice"
       :description="description"

@@ -6,10 +6,25 @@ html{
   scroll-behavior: smooth;
 }
 
+.content-container {
+  height: 100%;
+}
 
 .scroll {
   scroll-snap-align: start;
   scroll-snap-stop: always;
-
 }
 
+.v-application {
+  display: initial !important;
+  position: initial !important;
+}
+
+.v-application--wrap {
+  display: initial !important;
+  flex: none !important;
+  flex-direction: initial !important;
+  height: 100% !important;
+  min-height: 100% !important;
+  position: initial !important;
+}
