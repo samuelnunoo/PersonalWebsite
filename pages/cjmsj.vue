@@ -1,7 +1,7 @@
 <template>
   <div>
     <projectInfo
-      title="Claremont Journal of Medicine and Social Justice"
+      title="CJMSJ"
       :description="description"
       github="https://github.com/samuelnunoo/CJMSJ-Website"
       date="September 2019 - March 2020"
@@ -26,8 +26,7 @@ export default {
       description:`
       The Claremont Journal of Medicine and Social Justice (CJMSJ) is a student club where members write articles related
       to medicine and social justice. I created a website for them that allowed them to create, submit, and approve article submissions
-      for anyone who wished to contribute. While the site ultimately was not used, it was an amazing experience working with the team and
-      my first experience with creating more complex web applications.`,
+      for anyone who wished to contribute.`,
       features: [
         {
           title:"Articles Page",

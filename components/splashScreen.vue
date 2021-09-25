@@ -4,7 +4,7 @@
       <div class="text-content">
         <p class="main-name"> Samuel Nunoo</p>
         <h1 class="main-title"> Full-Stack <br/> Web Developer </h1>
-        <p class="main-subscript"> Passionate about creating apps that makes life a little less troublesome.</p>
+        <p class="main-subscript"> Musician, Developer, Lifelong Learner.</p>
       </div>
       <div class="link-content">
         <a href="#Type.io">Projects</a>
