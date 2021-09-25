@@ -6,6 +6,9 @@ html{
   scroll-behavior: smooth;
 }
 
+.content-container {
+  height: 100%;
+}
 
 .scroll {
   scroll-snap-align: start;
