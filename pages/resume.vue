@@ -1,5 +1,5 @@
 <template>
-  <div class="main-container" id="resume">
+  <div class="main-container scroll" id="resume">
     <div class="resume-container">
       <div class="resume-data">
         <h1 class="resume-heading"> Resume </h1>
@@ -12,7 +12,8 @@
 </template>
 
 <script>
-const PDF_URL = "/resume2021.pdf"
+const PDF_URL = "https://samuelnunoo.github.io/Resume/resume.pdf"
+
 import Job from "../components/job.vue"
 import social from "../components/social";
 export default {
@@ -53,7 +54,7 @@ export default {
   font-size: 2.5em
 
 .cover
-  width: 50vw
+  width: 50%
   height: 100vh
   height: calc(var(--vh,1vh) * 100)
   background: black
@@ -80,14 +81,14 @@ export default {
 
 
 .resume-container
-  width: 50vw
+  width: 50%
   height: 100vh
   height: calc(var(--vh,1vh) * 100)
   display: flex
   justify-content: center
 
 .social-container
-  width: 50vw
+  width: 50%
   height: 100vh
   height: calc(var(--vh,1vh) * 100)
   justify-content: center
@@ -96,12 +97,12 @@ export default {
   flex-direction: column
 
 .main-container
-  width: 100vw
+  width: 100%
   height: 100vh
   height: calc(var(--vh,1vh) * 100)
   height: calc(var(--vh,1vh) * 100)
   display: flex
-  scroll-snap-align: start
+
 
 
 
@@ -110,7 +111,7 @@ export default {
     flex-direction: column
     width: 100%
     margin-top: 0px
-    height: 95vh
+    height: 100vh
 
   .resume-container
     width: 100%
