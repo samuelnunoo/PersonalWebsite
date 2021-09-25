@@ -1,5 +1,5 @@
 <template>
-  <div class="scroll-container">
+  <div>
     <splashScreen/>
     <Project/>
     <resume/>
