@@ -19,7 +19,6 @@ export default {
     }
   },
   mounted() {
-    console.log('biff')
     document.addEventListener('scroll',function(event) {
       const buffer = 20
       const hasScrolledPassBuffer = document.scrollingElement.scrollTop > buffer
@@ -36,12 +35,12 @@ export default {
 
 #scroll-button
   position: fixed
-  top: 90vh
+  top: 90%
   left: 90vw
 
 @media (max-width: $mobile-width)
   #scroll-button
-    top: 85vh
+    top: 80%
     left: 75vw
 
 
