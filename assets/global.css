@@ -16,15 +16,15 @@ html{
 }
 
 .v-application {
-  display: initial;
-  position: initial;
+  display: initial !important;
+  position: initial !important;
 }
 
 .v-application--wrap {
-  display: initial;
-  flex: none;
-  flex-direction: initial;
-  height: 100%;
-  min-height: 100%;
-  position: initial;
+  display: initial !important;
+  flex: none !important;
+  flex-direction: initial !important;
+  height: 100% !important;
+  min-height: 100% !important;
+  position: initial !important;
 }
