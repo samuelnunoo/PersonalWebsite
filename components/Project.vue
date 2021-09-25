@@ -54,14 +54,15 @@ export default {
 
 .project-container
   display: flex
-  width: 100vw
+  width: 100%
+  max-height: 100vh
   height: 100vh
 
 .reverse
   flex-direction: row-reverse
 
 .display
-  width: 50vw
+  width: 50%
   flex-basis: 50%
   align-content: center
   max-width: 60%
@@ -105,7 +106,7 @@ export default {
 
   .display
     max-width: 100% !important
-    width: 100vw
+    width: 100%
     height: 50%
 
 

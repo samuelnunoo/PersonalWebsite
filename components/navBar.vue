@@ -24,12 +24,10 @@ export default {
       return !this.nodeIsNavBarDescendant(navBar,element) && vApp.contains(element) && element !== vApp
     },
     isWhite(element){
-      const navBar = document.querySelector("#navbar")
       const style = getComputedStyle(element)
       const background = style.getPropertyValue("background-color")
-      const isWhite =  background == "rgba(0, 0, 0, 0)" || background.toLowerCase() == ''
-      const hasImage =  style.backgroundImage != 'none'
-      console.log("hasImage:",hasImage)
+      const isWhite =  background == "rgba(0, 0, 0, 0)" || background.toLowerCase() == '' || background == "rgb(255,255,255)"
+      console.log("Background:",background)
       return isWhite
     },
     handleColor(vApp,navBar) {

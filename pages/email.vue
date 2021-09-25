@@ -33,7 +33,7 @@ export default {
   align-items: center
   justify-content: center
   padding:  10vh
-  width: 100vw
+  width: 100%
   height: 100vh
   background-image: url('/ocean.jpg')
   background-size: cover

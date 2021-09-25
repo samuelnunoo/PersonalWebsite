@@ -55,9 +55,8 @@ export default {
   font-size: 2.5em
 
 .cover
-  width: 50vw
+  width: 50%
   height: 100vh
-  background-image: url('/ocean.jpg')
   background: black
   background-size: cover
 
@@ -82,13 +81,13 @@ export default {
 
 
 .resume-container
-  width: 50vw
+  width: 50%
   height: 100vh
   display: flex
   justify-content: center
 
 .social-container
-  width: 50vw
+  width: 50%
   height: 100vh
   justify-content: center
   align-items: center
@@ -96,7 +95,7 @@ export default {
   flex-direction: column
 
 .main-container
-  width: 100vw
+  width: 100%
   height: 100vh
   display: flex
 
@@ -108,7 +107,7 @@ export default {
     flex-direction: column
     width: 100%
     margin-top: 0px
-    height: 95vh
+    height: 100vh
 
   .resume-container
     width: 100%

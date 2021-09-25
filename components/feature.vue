@@ -83,8 +83,9 @@ export default {
 
 
   .feature-container
-    width: 100vw
+    width: 100%
     height: 50vh
+    max-height: 50vh
     padding: 2.5vh 0 2.5vh 0
     display: flex
 
@@ -105,7 +106,8 @@ export default {
     .feature-container
       flex-direction: column-reverse
       height: 100vh
-      width: 100vw
+      max-height: 100vh
+      width: 100%
       background: white
       padding: 0
 
@@ -128,7 +130,7 @@ export default {
       border-radius: 0
 
     .cover
-      width: 100vw
+      width: 100%
       height: 50vh
       object-fit: cover
 
@@ -154,7 +156,7 @@ export default {
       background: white
 
     .cover
-      width: 100vw
+      width: 100%
       height: 50vh
       object-fit: cover
 
@@ -166,8 +168,9 @@ export default {
       height: 100%
 
     .cover
-      width: 100vw
+      width: 100%
       height: 50vh
+      max-height: 50vh
       object-fit: cover
 
     .feature-text
