@@ -26,7 +26,7 @@ export default {
 @import "assets/colors"
 
 .page-container
-  width: 100vw
+  width: 100%
 
 .link-content > a
   color: black
@@ -96,7 +96,7 @@ img
 @media (max-width: $mobile-width)
   .main-container
     flex-direction: column-reverse
-    height: 90vh
+    height: 100vh
 
   .link-content
     flex-direction: column
