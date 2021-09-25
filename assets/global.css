@@ -35,3 +35,9 @@ body {
   min-height: 100% !important;
   position: initial !important;
 }
+
+@media(max-width: 1000px) {
+  html {
+    scroll-snap-type: none;
+  }
+}

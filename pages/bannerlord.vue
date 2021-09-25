@@ -26,7 +26,7 @@ export default {
     return {
       description:`Bannerlord is a video game that was released in Q1 2020. As the game had just released, there was no documentation
       on how to properly mod the game. And I spent countless hours (400+) combing through their massive code base (500k+ lines of code)
-      to figure out critical classes and methods.After learning about major components of the game, I made a mod that can allow you to
+      to figure out critical classes and methods. After learning about major components of the game, I made a mod that can allow you to
       place custom prefabs onto the world map.I also took the knowledge that I gained and wrote an array of tutorials that received over 2,000 views in total.
 
       `,
