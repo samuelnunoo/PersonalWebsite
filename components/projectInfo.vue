@@ -2,7 +2,7 @@
   <div class="info-container">
     <div class="github-container">
       <button @click="openUrl" v-if="github != ''">
-        <img class='github' src="/social/github.png" />
+        <img class='github' :src="custom !== '' ? custom : '/social/github.png'"/>
        </button>
       <h1 class="project-title"> {{ title }}</h1>
       <h4 class="project-date"> {{ date }} </h4>
@@ -31,6 +31,10 @@ export default {
     date: {
       type: String,
       required:true
+    },
+    custom: {
+      type: String,
+      default: ''
     },
     github: {
       type: String,
