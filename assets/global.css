@@ -4,6 +4,8 @@ html{
   overscroll-behavior-y: none;
   overscroll-behavior-x: none;
   scroll-behavior: smooth;
+  overscroll-behavior-x: none;
+  overflow: hidden;
   height: 100%;
   height: -webkit-fill-available;
 }

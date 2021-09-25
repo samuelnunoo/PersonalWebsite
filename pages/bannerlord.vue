@@ -2,7 +2,8 @@
   <div class="content-container">
     <projectInfo
       title="Bannerlord"
-      github="https://github.com/samuelnunoo/Scene-Editor"
+      github="https://linktr.ee/samuelnunoo"
+      custom="/social/linktree.png"
       :description="description"
       date="April 2020 - November 2020"
     />
