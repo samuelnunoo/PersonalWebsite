@@ -55,6 +55,7 @@ export default {
     font-size: 1em
     font-weight: bolder
     margin-top: 5px
+    margin-bottom: -1px
     font-family: "Roboto Condensed"
 
   #logo-subscript
