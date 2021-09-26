@@ -27,7 +27,7 @@ export default {
       const navBar = document.querySelector("#navbar")
       const style = getComputedStyle(element)
       const background = style.getPropertyValue("background-color")
-      const isWhite =  background == "rgba(0, 0, 0, 0)" || background.toLowerCase() == ''
+      const isWhite =  background == "rgba(0, 0, 0, 0)" || background.toLowerCase() == '' || background == "rgb(255, 255, 255)"
       const hasImage =  style.backgroundImage != 'none'
       return isWhite
     },

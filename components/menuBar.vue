@@ -11,6 +11,7 @@
       v-bind="attrs"
       v-on="on"
       :color="menuColor"
+      id="menu-button"
     >
       <fa icon="bars"/>
     </v-btn>
@@ -65,6 +66,9 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+
+#menu-button
+  margin-right: 20px
 
 .button-container
   justify-content: end

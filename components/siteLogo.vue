@@ -35,6 +35,9 @@ export default {
 }
 </script>
 <style lang="sass" scoped>
+  button
+    padding: 0 20px 0 20px
+
   img
     width: auto
     height: 100%
