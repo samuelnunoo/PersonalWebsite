@@ -11,6 +11,7 @@
       v-bind="attrs"
       v-on="on"
       :color="menuColor"
+      id="menu-button"
     >
       <fa icon="bars"/>
     </v-btn>
@@ -71,6 +72,9 @@ export default {
   padding: 10px 30px
   display: flex
   height: 5vh
+
+#menu-button
+  margin-right: 20px
 
 .link-container > a
   color: black
