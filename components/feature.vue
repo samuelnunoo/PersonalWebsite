@@ -124,7 +124,7 @@ export default {
       height: calc(var(--vh,1vh) * 50)
 
     .text-content
-      color: black
+      color: white
 
     .gif
       width: 100%
@@ -139,11 +139,9 @@ export default {
       object-fit: cover
 
 
-    .darkMode
-      background: white
-
     .feature-text
       flex-basis: 50%
+      background: black
       text-align: center
 
 
@@ -161,11 +159,12 @@ export default {
 
     .text-content
       align-self: start
-      color: black
+      color: white
       max-width: 90%
 
     .feature-text
       flex-basis: 50%
+      background: black
       text-align: center
 
 
@@ -174,11 +173,6 @@ export default {
       height: 50vh
       height: calc(var(--vh,1vh) * 50)
       object-fit: cover
-
-
-    .darkMode
-      background: white
-
 
 
 
@@ -198,15 +192,14 @@ export default {
 
     .text-content
       align-self: start
-      color: black
+      color: white
       max-width: 90%
 
     .feature-text
       flex-basis: 50%
       text-align: center
+      background: black
 
-    .darkMode
-      background: white
 
     .feature-container
       background: white
