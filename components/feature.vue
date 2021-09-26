@@ -3,13 +3,16 @@
   class="feature-container scroll background"
   :class="{'darkMode': isDark,'reverse': isReverse}"
 >
-  <div class="feature-text">
-    <div class="text-content">
+  <div
+    class="feature-text background"
+    :class="{'darkMode': isDark,'reverse': isReverse}"
+  >
+    <div class="text-content ">
       <h1 class="feature-title"> {{title}}</h1>
       <p class="feature-description"> {{description}}</p>
     </div>
   </div>
-  <div class="feature-image" >
+  <div class="feature-image background" >
     <gif class='gif' :class='{"cover": cover}' :gif="gif" :image="image"/>
   </div>
 </div>
@@ -99,6 +102,7 @@ export default {
     display: flex
     justify-content: center
     align-items: center
+    background: white
 
 
 
