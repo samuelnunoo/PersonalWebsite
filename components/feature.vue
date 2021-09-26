@@ -85,7 +85,6 @@ export default {
   .feature-container
     width: 100vw
     height: 50vh
-    height: calc(var(--vh,1vh) * 50)
     padding: 2.5vh 0 2.5vh 0
     display: flex
     scroll-snap-align: start
@@ -107,7 +106,6 @@ export default {
     .feature-container
       flex-direction: column-reverse
       height: 100vh
-      height: calc(var(--vh,1vh) * 100)
       width: 100vw
       background: white
       padding: 0
@@ -120,7 +118,7 @@ export default {
 
     .feature-image
       height: 50vh
-      height: calc(var(--vh,1vh) * 50)
+
 
     .text-content
       color: white
@@ -134,7 +132,6 @@ export default {
     .cover
       width: 100vw
       height: 50vh
-      height: calc(var(--vh,1vh) * 50)
       object-fit: cover
 
 
@@ -161,7 +158,6 @@ export default {
     .cover
       width: 100vw
       height: 50vh
-      height: calc(var(--vh,1vh) * 50)
       object-fit: cover
 
 
@@ -174,7 +170,6 @@ export default {
     .cover
       width: 100vw
       height: 50vh
-      height: calc(var(--vh,1vh) * 50)
       object-fit: cover
 
     .feature-text

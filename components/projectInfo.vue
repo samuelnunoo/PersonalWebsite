@@ -80,7 +80,6 @@ export default {
     background: black
     width: 100vw
     height: 50vh
-    height: calc(var(--vh,1vh) * 50)
     margin-top: -50px
     display: flex
     justify-content: flex-end
@@ -94,7 +93,6 @@ export default {
   .about-container
     width: 100vw
     height: 50vh
-    height: calc(var(--vh,1vh) * 50)
     display: flex
     justify-content: center
 

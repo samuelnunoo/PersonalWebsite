@@ -35,7 +35,6 @@ export default {
   padding:  10vh
   width: 100vw
   height: 100vh
-  height: calc(var(--vh,1vh) * 100)
   background-size: cover
 
 
