@@ -77,7 +77,7 @@ export default {
 @import 'assets/colors'
 
 #navbar
-  width: 100%
+  width: 100vw
   height: $navbar-height
   display: flex
   justify-content: space-between

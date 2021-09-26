@@ -38,7 +38,7 @@ export default {
 .link-content
   display: flex
   justify-content: space-around
-  width: 100%
+  width: 100vw
   padding: 0 80px 0 80px
   font-size: 1.25em
   font-family: "Roboto Condensed"
@@ -90,7 +90,7 @@ export default {
   overflow: hidden
 
 img
-  width: 100%
+  width: 100vw
   height: 100%
 
 
@@ -111,7 +111,7 @@ img
   .text-container
     align-items: start
     flex-basis: 60%
-    width: 100%
+    width: 100vw
     justify-content: initial
     padding-top: 20px
 

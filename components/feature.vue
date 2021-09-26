@@ -126,7 +126,7 @@ export default {
       color: white
 
     .gif
-      width: 100%
+      width: 100vw
       height: 100%
       object-fit: contain
       border-radius: 0
@@ -168,7 +168,7 @@ export default {
 
   @media (max-width: $mobile-small)
     .gif
-      width: 100%
+      width: 100vw
       height: 100%
 
     .cover

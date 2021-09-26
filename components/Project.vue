@@ -96,7 +96,7 @@ display
     flex-direction: column-reverse
 
   .description
-    width: 100%
+    width: 100vw
     justify-content: center
     flex-basis: 50%
     display: flex
@@ -106,7 +106,7 @@ display
     font-size: 2em
 
   .display
-    max-width: 100% !important
+    max-width: 100vw !important
     width: 100vw
     height: 50%
 
