@@ -38,7 +38,7 @@ export default {
 .link-content
   display: flex
   justify-content: space-around
-  width: 100vw
+  width: 50vw
   padding: 0 80px 0 80px
   font-size: 1.25em
   font-family: "Roboto Condensed"
@@ -46,7 +46,7 @@ export default {
 .main-name
   font-family: "Roboto Condensed"
   font-weight: bold
-  margin-bottom: -10px
+  margin-bottom: -6px
   margin-top: auto
   color: $grey
 
@@ -101,6 +101,9 @@ img
   .link-content
     flex-direction: column
     flex-basis: 45%
+    width: 100%
+    align-self: center
+
 
   .text-content
     text-align: center !important

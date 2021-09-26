@@ -62,11 +62,11 @@ export default {
 .reverse
   flex-direction: row-reverse
 
-display
+.display
   width: 50vw
   flex-basis: 50%
   align-content: center
-  max-width: 60%
+
 
 
 .cover
@@ -106,7 +106,7 @@ display
     font-size: 2em
 
   .display
-    width: 50vw
+    width: 100vw
     height: 50%
 
 
