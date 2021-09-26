@@ -67,7 +67,7 @@ export default {
 
   .gif
     border-radius: 10px
-    height: 100%
+    height: 45vh
 
   .text-content
     align-self: center
@@ -88,8 +88,8 @@ export default {
   .feature-container
     width: 100%
     height: 50vh
-    height: calc(var(--vh,1vh) * 50)
-    padding: 2.5vh 0 2.5vh 0
+    padding-top: 10px
+    padding-bottom: 10px
     display: flex
 
   .feature-text
@@ -102,7 +102,6 @@ export default {
     display: flex
     justify-content: center
     align-items: center
-    background: white
 
 
 
@@ -110,7 +109,6 @@ export default {
     .feature-container
       flex-direction: column-reverse
       height: 100vh
-      height: calc(var(--vh,1vh) * 100)
       width: 100%
       background: white
       padding: 0

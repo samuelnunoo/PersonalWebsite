@@ -35,21 +35,24 @@ export default {
 }
 </script>
 <style lang="sass" scoped>
+  @import "assets/colors"
+
   img
     width: auto
-    height: 100%
+    height: $navbar-height
 
   .dark-font
     color: white
 
   .logo-container
-    width: auto
+    width: 200px
     height: 100%
     display: flex
 
   .logo-title-container
     height: 100%
     width: auto
+
 
   #logo-heading
     font-size: 1em
