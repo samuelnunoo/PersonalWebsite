@@ -24,18 +24,15 @@ export default {
       return !this.nodeIsNavBarDescendant(navBar,element) && vApp.contains(element) && element !== vApp
     },
     isWhite(element){
-      const navBar = document.querySelector("#navbar")
       const style = getComputedStyle(element)
       const background = style.getPropertyValue("background-color")
       const isWhite =  background == "rgba(0, 0, 0, 0)" || background.toLowerCase() == '' || background == "rgb(255, 255, 255)"
-      const hasImage =  style.backgroundImage != 'none'
       return isWhite
     },
     handleColor(vApp,navBar) {
       const isMainContentNode = this.isMainContentNode
       const isWhite = this.isWhite
       const styleElement = this.styleElement
-
       return function (element,x,y) {
         const elements = document.elementsFromPoint(x,y)
         const refElement = elements.filter(el => isMainContentNode(vApp,navBar,el))[0]
@@ -47,7 +44,6 @@ export default {
     styleElement(element,color) {
       const isMenuButton = element.classList.contains("v-btn")
       const colorValue = color == "white"
-
       if (isMenuButton) this.darkMenu = colorValue
       else this.isDark = colorValue
     }
@@ -59,7 +55,6 @@ export default {
     const navBar = document.querySelector("#navbar")
     const menuButton = document.querySelector("#navbar .v-btn")
     const handleColor = this.handleColor(vApp,navBar)
-
     const handleColorMethods = () => {
       const {width} = navBar.getBoundingClientRect()
       const buttonPos = width * .95
@@ -75,9 +70,8 @@ export default {
 
 <style lang="sass" scoped>
 @import 'assets/colors'
-
 #navbar
-  width: 100vw
+  width: 100%
   height: $navbar-height
   display: flex
   justify-content: space-between
@@ -85,8 +79,4 @@ export default {
   position: sticky
   background: transparent
   z-index: 300
-
-
-
-
 </style>

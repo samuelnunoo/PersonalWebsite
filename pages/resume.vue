@@ -12,7 +12,7 @@
 </template>
 
 <script>
-const PDF_URL = "/resume2021.pdf"
+const PDF_URL = "https://samuelnunoo.github.io/Resume/resume.pdf"
 import Job from "../components/job.vue"
 import social from "../components/social";
 export default {

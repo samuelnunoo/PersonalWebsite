@@ -5,16 +5,15 @@
   >
     <template v-slot:activator="{ on, attrs }">
       <v-btn
-      plain
-      icon
-      x-large
-      v-bind="attrs"
-      v-on="on"
-      :color="menuColor"
-      id="menu-button"
-    >
-      <fa icon="bars"/>
-    </v-btn>
+        plain
+        icon
+        x-large
+        v-bind="attrs"
+        v-on="on"
+        :color="menuColor"
+      >
+        <fa icon="bars"/>
+      </v-btn>
     </template>
     <v-card >
       <div class="button-container">
@@ -48,7 +47,7 @@ export default {
   computed:{
     menuColor() {
       return this.isDark ?
-      "white" : "black"
+        "white" : "black"
     }
   },
   methods: {
@@ -66,23 +65,17 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-
-#menu-button
-  margin-right: 20px
-
 .button-container
   justify-content: end
   padding: 10px 30px
   display: flex
   height: 5vh
-
 .link-container > a
   color: black
   font-family: "Roboto Condensed"
   font-weight: bolder
   margin: 10px 0 10px
   font-size:  2em
-
 .link-container
   display: flex
   height: 95vh
