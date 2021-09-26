@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="content-container">
     <projectInfo
       title="Bannerlord"
       github="https://linktr.ee/samuelnunoo"
