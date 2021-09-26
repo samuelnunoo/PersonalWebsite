@@ -1,4 +1,5 @@
 html {
+  width: 100vw;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   overflow: hidden;
