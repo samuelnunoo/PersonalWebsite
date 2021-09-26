@@ -108,12 +108,12 @@ export default {
 @media (max-width: $mobile-width)
   .main-container
     flex-direction: column
-    width: 100%
+    width: 100vw
     margin-top: 0px
     height: 95vh
 
   .resume-container
-    width: 100%
+    width: 100vw
 
 
   .resume-data
@@ -130,7 +130,7 @@ export default {
 
 
   .social-container
-    width: 100%
+    width: 100vw
     justify-content: start
 
 

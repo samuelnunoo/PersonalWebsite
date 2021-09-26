@@ -106,8 +106,8 @@ display
     font-size: 2em
 
   .display
-    max-width: 100vw !important
-    width: 100vw
+    max-width: 50vw !important
+    width: 50vw
     height: 50%
 
 
