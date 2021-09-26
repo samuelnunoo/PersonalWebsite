@@ -1,5 +1,5 @@
 <template>
-<div class="contact-container scroll" id="contact">
+<div class="contact-container scroll background" id="contact">
   <h1 class="contact"> Contact and Social </h1>
   <social/>
 </div>

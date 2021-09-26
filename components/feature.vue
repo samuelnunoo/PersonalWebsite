@@ -1,6 +1,6 @@
 <template>
 <div
-  class="feature-container scroll"
+  class="feature-container scroll background"
   :class="{'darkMode': isDark,'reverse': isReverse}"
 >
   <div class="feature-text">

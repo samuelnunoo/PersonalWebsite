@@ -1,13 +1,13 @@
 <template>
   <div class="scroll">
-    <div class="github-container">
+    <div class="github-container background">
       <button @click="openUrl" v-if="github != ''">
         <img class='github' :src="custom !== '' ? custom : '/social/github.png'"/>
        </button>
       <h1 class="project-title"> {{ title }}</h1>
       <h4 class="project-date"> {{ date }} </h4>
     </div>
-    <div class="about-container">
+    <div class="about-container background">
       <div class="text-container">
         <h2 class="about-title"> Description </h2>
         <p class="about-text"> {{ description }}</p>

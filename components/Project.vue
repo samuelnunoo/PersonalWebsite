@@ -1,5 +1,5 @@
 <template>
-  <div  @click='openUrl' class="project-container scroll" :class="{'reverse': reverse }" >
+  <div  @click='openUrl' class="project-container scroll background" :class="{'reverse': reverse }" >
     <gif  class='display'  :class='{"cover": cover}' :gif="gif" :image="image"/>
     <div class="description">
       <div class="text-content">

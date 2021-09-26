@@ -1,13 +1,13 @@
 <template>
   <div class="main-container scroll" id="resume">
-    <div class="resume-container">
+    <div class="resume-container background">
       <div class="resume-data">
         <h1 class="resume-heading"> Resume </h1>
         <button @click="viewResume" class="resume-button"> View Resume </button>
       </div>
 
     </div>
-    <div class="cover" />
+    <div class="cover background" />
   </div>
 </template>
 

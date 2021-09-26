@@ -22,6 +22,8 @@ export default {
     },
     isMainContentNode(vApp,navBar,element) {
       return !this.nodeIsNavBarDescendant(navBar,element) && vApp.contains(element) && element !== vApp
+      && element.classList.contains("background")
+
     },
     isWhite(element){
       const style = getComputedStyle(element)
