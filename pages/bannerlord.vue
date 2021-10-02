@@ -1,5 +1,5 @@
 <template>
-  <div class="content-container">
+  <div class="content-container" id="main">
     <projectInfo
       title="Bannerlord"
       github="https://linktr.ee/samuelnunoo"
@@ -10,6 +10,7 @@
     <Feature
       v-for="(feature,index) in features"
       :image="feature.image"
+      :key="index"
       :gif="feature.gif"
       :title="feature.title"
       :cover="feature.cover"

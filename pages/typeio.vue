@@ -1,5 +1,5 @@
 <template>
-  <div class="content-container">
+  <div class="content-container" id="main">
     <projectInfo
       title="Type.io"
       :description="description"
@@ -7,6 +7,7 @@
     />
     <Feature
       v-for="(feature,index) in features"
+      :key="index"
       :image="feature.image"
       :gif="feature.gif"
       :title="feature.title"

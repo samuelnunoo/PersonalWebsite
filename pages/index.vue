@@ -1,5 +1,5 @@
 <template>
-  <div class="content-container">
+  <div class="content-container" id="main">
     <splashScreen/>
     <Project/>
     <resume/>
@@ -15,8 +15,10 @@ import contact from "./contact"
 import tilt from "vanilla-tilt"
 import ScrollToTop from "../components/scrollToTop";
 import Gif from "../components/gif";
+import ScrollSnap from "scroll-snap";
 export default {
   components: {"gif":Gif, "scroll-to-top":ScrollToTop, Project,splashScreen,contact,resume},
+
 
 }
 
