@@ -121,7 +121,7 @@ export default {
 
     .feature-image
       height: 50vh
-      height: calc(var(--vh,1vh) * 50)
+
 
     .text-content
       color: white
@@ -134,7 +134,6 @@ export default {
     .cover
       width: 100%
       height: 50vh
-      height: calc(var(--vh,1vh) * 50)
       object-fit: cover
 
 
@@ -170,7 +169,6 @@ export default {
     .cover
       width: 100%
       height: 50vh
-      height: calc(var(--vh,1vh) * 50)
       object-fit: cover
 
 
@@ -183,7 +181,6 @@ export default {
     .cover
       width: 100%
       height: 50vh
-      height: calc(var(--vh,1vh) * 50)
       object-fit: cover
 
 

@@ -39,6 +39,7 @@ export default {
       return function (element,x,y) {
         const elements = document.elementsFromPoint(x,y)
         const refElement = elements.filter(el => isMainContentNode(vApp,navBar,el))[0]
+        if (!refElement) return 
         const elementIsWhite = isWhite(refElement)
         if (elementIsWhite) styleElement(element,"black")
         else styleElement(element,"white")

@@ -31,7 +31,7 @@ export default {
     },
     image: {
       type:String,
-      required:true
+      default: ""
     },
     title:{
       type:String,

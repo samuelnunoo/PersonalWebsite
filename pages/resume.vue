@@ -56,7 +56,6 @@ export default {
 .cover
   width: 50%
   height: 100vh
-  height: calc(var(--vh,1vh) * 100)
   background: black
   background-size: cover
 
@@ -83,14 +82,12 @@ export default {
 .resume-container
   width: 50%
   height: 100vh
-  height: calc(var(--vh,1vh) * 100)
   display: flex
   justify-content: center
 
 .social-container
   width: 50%
   height: 100vh
-  height: calc(var(--vh,1vh) * 100)
   justify-content: center
   align-items: center
   display: flex
@@ -99,8 +96,6 @@ export default {
 .main-container
   width: 100%
   height: 100vh
-  height: calc(var(--vh,1vh) * 100)
-  height: calc(var(--vh,1vh) * 100)
   display: flex
 
 

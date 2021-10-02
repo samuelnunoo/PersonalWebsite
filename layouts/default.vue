@@ -1,53 +1,42 @@
 <template>
   <v-app>
     <nav-bar :isDark="false"/>
-    <Nuxt/>
+      <Nuxt/>
     <scroll-to-top/>
   </v-app>
 </template>
 
 <script>
-import navBar from "../components/navBar";
-import _ from "lodash"
+import ScrollSnap from "scroll-snap"
+
+
 export default {
   data () {
     return {
-      clipped: false,
-      components: {"nav-bar":navBar},
-      drawer: false,
-      fixed: false,
-      items: [
-        {
-          icon: 'mdi-apps',
-          title: 'Welcome',
-          to: '/'
-        },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
-        }
-      ],
-      miniVariant: false,
-      right: true,
-      rightDrawer: false,
-      title: 'Vuetify.js',
-      computed: {
-        copyAlert() {
-          return this.$store.state.alert
-        }
+      fullPageOptions: {
+
       }
+
     }
   },
+  methods: {
+    sineEase(x) {
+      return -1 * (Math.cos(Math.PI * x) - 1) /2
+    },
+    bindScrollSnap() {
+      const snapElement = new ScrollSnap(document.scrollingElement,{
+        snapDestinationY: '100vh',
+        threshold: 0.05,
+        duration: 0,
+        timeout: 2,
+        easing: this.sineEase
+      })
+      snapElement.bind(() => console.log("snapped"))
+    },
+
+  },
   mounted() {
-    let vh = window.innerHeight * 0.01
-    document.documentElement.style.setProperty('--vh',`${vh}px`)
-    window.scrollTo(0,1);
-    window.addEventListener("resize",() => {
-      console.log("Changing")
-      let vh = window.innerHeight * 0.01
-      document.documentElement.style.setProperty('--vh',`${vh}px`)
-    })
+
   }
 }
 </script>

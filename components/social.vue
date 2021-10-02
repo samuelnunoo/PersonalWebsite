@@ -3,6 +3,7 @@
   <socialItem
     image="/social/email.png"
     title="Email"
+    link=""
   />
   <socialItem
     link='https://www.github.com/samuelnunoo'

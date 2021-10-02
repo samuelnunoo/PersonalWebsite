@@ -1,7 +1,7 @@
 <template>
   <video autoplay muted loop playsinline>
     <source :src="gif" />
-    <source :src="image"/>
+    <source :v-if="image != ''" :src="image"/>
     Your Browser does not Support HTML5 Videos
   </video>
 </template>
